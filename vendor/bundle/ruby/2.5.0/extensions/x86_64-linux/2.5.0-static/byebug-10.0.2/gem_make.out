@@ -1,0 +1,19 @@
+current directory: /mnt/c/Users/k7287/Desktop/litalico/team_dev/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+/home/k72879/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180810-452-nrruq.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/k7287/Desktop/litalico/team_dev/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /mnt/c/Users/k7287/Desktop/litalico/team_dev/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /mnt/c/Users/k7287/Desktop/litalico/team_dev/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20180810-452-1edf07q/byebug
