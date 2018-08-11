@@ -1,5 +1,9 @@
 <h1>Root#home</h1>
 <p>Find me in app/views/root/home.html.erb</p>
+<% a = Comment.all %>
+<% a.each do |f| %>
+<%= f.id %>
+<% end %>
 
 
 <%= javascript_pack_tag 'hello_vue' %>
