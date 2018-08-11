@@ -3,9 +3,12 @@ json.set! :user do
   json.name @user.name
   json.role @user.role
   json.set! :drops do
-    json.array! @comments do |comment|
-      json.id @user.id
-      json.count @user.id
+    json.array! @drops do |drop|
+      json.count 3
+      json.year drop.year
+      json.month drop.month
+      json.date drop.date
+      json.is_new true
     end
   end
 end
