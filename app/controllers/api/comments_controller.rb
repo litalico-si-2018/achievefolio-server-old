@@ -3,7 +3,23 @@ class Api::CommentsController < ApplicationController
   # GET /comments
   def index
     # 更新順
-    @comments = Comment.order('updated_at DESC')
+    @comments = Comment.all.order('updated_at DESC')
+    render json: {
+      "user": [
+        {
+          "name" => "aa",
+          "id" => 1
+        },
+        {
+          "name" => "bb",
+          "id" => 2
+        }
+      ],
+      "comment":
+        @comments.map {|f|
+          [id: f.id,c: f.body]
+        }
+    }
   end
 
   # POST /comments
