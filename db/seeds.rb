@@ -23,7 +23,7 @@ for i in 1..post_num do
   Post.create!(
   	user_id: 1,
   	approved_id: 2,
-  	approved: false,
+  	approved: true,
   	year: 2018,
   	month: 7,
   	date: i%30
